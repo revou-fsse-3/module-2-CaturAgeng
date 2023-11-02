@@ -1,1 +1,15 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/DUj7T_Sj)
+# My Landing Website - Ekos Design Interior
+
+Assignment Example for Week 1 - Making a landing web page (Ekos Interior Design)
+- Implement basic CSS to style My website.
+- Add simple JavaScript functionality to enhance user interactions.
+- Create a functional form on My website that includes input types (text, textarea), a submit button, and at least one of the following: radio buttons, checkboxes, or a select dropdown.
+- Style your form to align with My website's design.
+
+Layout : https://sensational-taffy-62a196.netlify.app/
+
+[v] Nav, Header, Main, Section
+[v] text, text-area, submit button
+[v] radio/check box/select
+[v] using flex to centering element and to create navbar
+[v] media query

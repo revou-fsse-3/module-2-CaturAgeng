@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&family=Permanent+Marker&display=swap');
+
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.5;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  position: sticky;
+  margin: auto;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  line-height: 40px;
+  background: #F8F0E5;
+  border-bottom: 1px solid #DAC0A3;
+  
+  & ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+  /* & ul .menu {
+    float: right;
+  }   */
+
+  & li {
+    float: left;
+  }
+
+  & a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+  }
+
+  & :hover {
+    text-decoration: underline;
+    color: rgb(21, 116, 160);
+  }
+  }
+
+  & .wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* & .logo a {
+      font-size: 1.5rem;
+      font-weight: bold;
+    } */
+  }
+
+  & .menu {
+    display: flex;
+    gap: 2rem;
+  }
+
+  & .toggle_btn {
+    color: #083979;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 1rem;
+  }
+
+  & a.tbl-sign {
+    background: #DAC0A3;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    transition: scale 0.2 ease;
+  }
+  
+  & a.tbl-sign:hover {
+    background: #0F2C59;
+    text-decoration: none;
+    transform: scale('1.05') ;
+  }
+
+  & a.tbl-sign:active {
+    transform: scale('0.95') ;
+  }
+/* Dropdown Menu */
+  & .dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 0rem;
+    top: 45px;
+    height: 0;
+    width: 300px;
+    background: #F8F0E5;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    & .open {
+      height: 240px;
+    }
+  
+    & .tbl-sign {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    & li {
+      padding: 0.7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+
+    & :hover {
+      text-decoration: underline;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    }
+  }
+
+  & .logo a {
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    font-family: courier;
+    color: #0F2C59;
+  }
+}
+
+#contact {
+  background: #EADBC8;
+  padding: 50px 50px;
+}
+/* Akhir Header */
+
+/* Main */
+main {
+  margin-top: 20px;
+
+  & h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #0F2C59;
+    width: 100%;
+    line-height: 50px;
+    margin-left: 20px;
+  }
+  
+  & h4 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #0F2C59;
+    width: 100%;
+    line-height: 50px;
+  }
+  
+  & p {
+    margin: 10px 20px;
+    padding: 10px 0px;
+  }
+}
+
+.list-card {
+  width: 20%;
+  margin: 0 auto;
+
+  & img {
+    width: 80%;
+    border-radius: 50%;
+  }
+
+  & p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #0F2C59;
+  }
+}
+
+.coulumn {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  & .description {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #0F2C59;
+  }
+}
+
+section {
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.center {
+  text-align: center;
+  width: 100%;
+}
+
+.facilities-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a.tbl-one {
+  background: #0F2C59;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-one:hover {
+  background: #DAC0A3;
+  text-decoration: none;
+}
+/* Akhir Main */
+
+/* ul {
+  list-style: none;
+} */
+
+/* Footer */
+.footer {
+  background-color: #DAC0A3;
+  padding: 70px 0;
+
+  & .container {
+    max-width: 1170px;
+    margin: auto;
+  }
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #0F2C59;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+  
+}
+
+.footer-col h4::before {
+  content:'';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #F8F0E5;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #0F2C59;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #0F2C59;
+  padding-left: 8%;
+} 
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: red;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: aqua;
+  background-color: orange;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Media Query*/
+@media screen and (max-width:992px) {
+  .wrapper .menu, .wrapper .tbl-sign {
+    display: none;
+    width: 90%;
+  }
+
+  .wrapper .toggle_btn {
+    display: block;
+  }
+
+  .logo a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  header {
+    & .menu {
+      width: 100%;
+      margin: 0;
+  
+      &  ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+  
+        & li {
+          display: inline-block;
+          float: none;
+        }
+      }
+    }
+
+    & .dropdown_menu {
+      display: block;
+    }
+  }
+
+  section {
+    display: block;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .list-card {
+    width: 50%;
+  }
+}
+
+/* Footer Responsive */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+
