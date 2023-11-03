@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&family=Permanent+Marker&display=swap');
+@font-face {
+  font-family: "Alex Brush";
+  src: url('AlexBrush-Regular.ttf') format('truetype');
+}
 
 * {
   text-decoration: none;
@@ -11,7 +14,8 @@ body {
   margin: 0px;
   padding: 0px;
   line-height: 1.5;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Alex Brush", sans-serif;
+  background-image: url('https://img.freepik.com/free-photo/oak-wooden-textured-design-background_53876-143033.jpg?w=996&t=st=1699025977~exp=1699026577~hmac=4ae80177c9b6e70870af928ce04c7719efa57dee6f7de707e7d11000aa1210b2');
 }
 
 /* Header */
@@ -25,6 +29,7 @@ header {
   line-height: 40px;
   background: #F8F0E5;
   border-bottom: 1px solid #DAC0A3;
+  font-family: "Alex Brush";
   
   & ul {
     list-style-type: none;
@@ -99,12 +104,12 @@ header {
   & a.tbl-sign:hover {
     background: #0F2C59;
     text-decoration: none;
-    transform: scale('1.05') ;
+    /* transition: scale 1.05; */
   }
 
-  & a.tbl-sign:active {
-    transform: scale('0.95') ;
-  }
+  /* & a.tbl-sign:active {
+    transition: scale 0.95 ;
+  } */
 /* Dropdown Menu */
   & .dropdown_menu {
     display: none;
@@ -112,34 +117,33 @@ header {
     right: 0rem;
     top: 45px;
     height: 0;
-    width: 300px;
+    width: 150px;
     background: #F8F0E5;
     border-radius: 15px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
-    & .open {
-      height: 240px;
-    }
-  
-    & .tbl-sign {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-  
-    & li {
-      padding: 0.7rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
+    &.open {
+      height: 340px;
 
-    & :hover {
-      text-decoration: underline;
-      color: #ffffff;
-      font-weight: bold;
-    }
+      & li {
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+      & :hover {
+        text-decoration: underline;
+        color: #ffffff;
+        font-weight: bold;
+      }
+      }
+
+      & .tbl-sign {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 
@@ -152,10 +156,10 @@ header {
   }
 }
 
-#contact {
+/* #contact {
   background: #EADBC8;
   padding: 50px 50px;
-}
+} */
 /* Akhir Header */
 
 /* Main */
@@ -163,18 +167,19 @@ main {
   margin-top: 20px;
 
   & h2 {
-    font-family: 'comic sans ms';
+    font-family: "Alex Brush", sans-serif;
     font-weight: 800;
     font-size: 45px;
     margin-bottom: 20px;
     color: #0F2C59;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(128, 61, 22), 0 0 5px rgb(121, 121, 122);
     width: 100%;
     line-height: 50px;
     margin-left: 20px;
   }
   
   & h4 {
-    font-family: 'comic sans ms';
+    font-family: "Alex Brush";
     font-weight: 800;
     font-size: 30px;
     margin-bottom: 20px;
@@ -189,17 +194,55 @@ main {
   }
 }
 
+#home img:hover {
+  animation: movingImgOne 5s ease;
+  transition: width 5s, height 5s, transform 5s;
+}
+
+@keyframes movingImgOne {
+  from {
+    width: 200px;
+  }
+
+  to {
+    width: 800px;
+  }
+}
+
+#about img:hover {
+  animation: movingImgTwo 5s ease;
+  transition: width 5s, height 5s, transform 5s;
+}
+
+@keyframes movingImgTwo {
+  from {
+    width: 200px;
+    height: auto;
+  }
+
+  to {
+    width: 800px;
+    height: auto;
+  }
+}
+
 .list-card {
   width: 20%;
   margin: 0 auto;
+  transition: width 2s, height 2s, transform 2s;
 
+  & :hover {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+  }
   & img {
     width: 80%;
     border-radius: 50%;
   }
 
   & p {
-    font-family: 'comic sans ms';
+    font-family: "Alex Brush";
     font-weight: 800;
     font-size: 25px;
     text-align: center;
@@ -214,7 +257,7 @@ main {
   & .description {
     font-size: 20px;
     font-weight: bold;
-    font-family: 'comic sans ms';
+    font-family: "Alex Brush";
     color: #0F2C59;
   }
 }
@@ -223,6 +266,13 @@ section {
   margin: auto;
   display: flex;
   margin-bottom: 50px;
+}
+
+#form-section {
+  margin: 10px 30%;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
 }
 
 .center {
@@ -300,6 +350,7 @@ a.tbl-one:hover {
 
 .footer-col ul li a {
   font-size: 16px;
+  list-style: circle inside;
   text-transform: capitalize;
   color: #0F2C59;
   text-decoration: none;
@@ -385,7 +436,7 @@ a.tbl-one:hover {
       height: auto;
     }
   }
-
+  
   .list-card {
     width: 50%;
   }

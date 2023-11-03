@@ -1,15 +1,26 @@
-# My Landing Website - Ekos Design Interior
-
-Assignment Example for Week 1 - Making a landing web page (Ekos Interior Design)
-- Implement basic CSS to style My website.
-- Add simple JavaScript functionality to enhance user interactions.
-- Create a functional form on My website that includes input types (text, textarea), a submit button, and at least one of the following: radio buttons, checkboxes, or a select dropdown.
-- Style your form to align with My website's design.
+## Module-2 Assignment Checklist Catur Ageng
 
 Layout : https://sensational-taffy-62a196.netlify.app/
 
-[v] Nav, Header, Main, Section
-[v] text, text-area, submit button
-[v] radio/check box/select
-[v] using flex to centering element and to create navbar
-[v] media query
+- [x] Responsive Image
+
+  - [x] implement contain or cover
+  - [x] implement image srcset
+
+- [x] Responsive asymmetrical layout
+- [x] Implement date input
+- [x] Font customization
+
+  - [x] using @font-face
+  - [x] using text-shadow
+  - [x] using list-style
+
+- [x] Responsive animation and transition
+
+  - [x] using @keyframes
+  - [x] using transition
+  - [x] responsive
+
+- [x] Documenting deployment
+- [x] Connect Netlify to Github
+- [ ] Using custom domain
