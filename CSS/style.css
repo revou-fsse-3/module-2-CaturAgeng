@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Alex Brush";
-  src: url('AlexBrush-Regular.ttf') format('truetype');
+  src: url('../Font/AlexBrush-Regular.ttf') format('truetype');
 }
 
 * {
@@ -173,7 +173,7 @@ main {
     margin-bottom: 20px;
     color: #0F2C59;
     text-shadow: 1px 1px 2px black, 0 0 25px rgb(128, 61, 22), 0 0 5px rgb(121, 121, 122);
-    width: 100%;
+    /* width: 100%; */
     line-height: 50px;
     margin-left: 20px;
   }
@@ -194,6 +194,16 @@ main {
   }
 }
 
+.homeImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+#home {
+  max-width: 100%;
+  
+}
+
 #home img:hover {
   animation: movingImgOne 5s ease;
   transition: width 5s, height 5s, transform 5s;
@@ -201,11 +211,11 @@ main {
 
 @keyframes movingImgOne {
   from {
-    width: 200px;
+    width: 30%;
   }
 
   to {
-    width: 800px;
+    width: 100%;
   }
 }
 
@@ -310,7 +320,9 @@ a.tbl-one:hover {
 /* Footer */
 .footer {
   background-color: #DAC0A3;
-  padding: 70px 0;
+  padding: 70px 50px;
+  display: flex;
+  justify-content: center;
 
   & .container {
     max-width: 1170px;
