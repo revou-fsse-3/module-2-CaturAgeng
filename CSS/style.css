@@ -95,7 +95,15 @@ header {
   & a.tbl-sign:hover {
     background: #0F2C59;
     text-decoration: none;
-    /* transition: scale 1.05; */
+    transition: scale 1.05;
+  }
+
+  & .logo a {
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    font-family: courier;
+    color: #0F2C59;
   }
 
 /* Dropdown Menu */
@@ -134,20 +142,12 @@ header {
       }
     }
   }
-
-  & .logo a {
-    font-size: 50px;
-    font-weight: bold;
-    float: left;
-    font-family: courier;
-    color: #0F2C59;
-  }
 }
 /* Akhir Header */
 
 /* Main */
 main {
-  margin-top: 20px;
+  margin-top: 0px;
 
   & h2 {
     font-family: "Alex Brush", sans-serif;
@@ -175,6 +175,7 @@ main {
     margin: 10px 20px;
     padding: 10px 0px;
   }
+
 }
 
 #home {
@@ -183,15 +184,15 @@ main {
   .homeImg {
     width: 100%;
     object-fit: cover;
-  }
-
-  & img:hover {
-    animation: movingImgOne 5s ease infinite;
+    box-shadow: 5px 3px 5px 5px black;
+    border-radius: 20px;
   }
 }
 
-.grid {
-  display: grid;
+
+
+#grid-container {
+  max-width: 100%;
   grid-template-columns: repeat(3, 300px);
   grid-template-rows: repeat(2, 450px);
   margin: 40px;
@@ -293,10 +294,6 @@ main {
         border-top-right-radius: 20px;
       }
     }
-
-  & img {
-    object-fit: cover;
-  }
 }
 
 .coulumn {
@@ -313,27 +310,15 @@ main {
 
 section {
   margin: auto;
-  display: flex;
+  display: grid;
   margin-bottom: 50px;
 }
 
 #form-section {
-  margin: 10px 30%;
+  margin: 10px;
   padding: 20px;
   text-align: center;
   justify-content: center;
-}
-
-.center {
-  text-align: center;
-  width: 100%;
-}
-
-.facilities-list {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 a.tbl-one {
@@ -482,33 +467,33 @@ a.tbl-one:hover {
       height: auto;
     }
   }
-  
-  .grid {
-    grid-template-columns: repeat(3)
+
+.grid{
+    grid-template-columns: repeat(3);
+    width: 100%;
   }
 }
 
 /* Footer Responsive */
 @media (max-width: 767px) {
-  .grid {
-    grid-template-columns: repeat(2)
+  .footer {
+    width: 100%;
   }
 
-  .footer {
-    display: block;
-    width: 100%;
-    margin-bottom: 30px;
+  .grid {
+    grid-template-columns: repeat(2);
+    width: 50%;
   }
 }
 
 @media (max-width: 574px) {
-  .grid {
-    grid-template-columns: repeat(1);
-  }
-
   .footer {
     width: 100%;
-    display: block;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1);
+    width: 30%;
   }
 }
 
