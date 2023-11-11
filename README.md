@@ -39,43 +39,43 @@ My Website : https://agengdev.my.id/
 
 ### 1. Netlify Sign up process & connect Netlify to your Github project
 
-- Pertama anda harus melakukan sign up ke Netlify (disini saya sign up menggunakan email).
-  [Sign Up]![Alt text](<Sign up with email _ Netlify and 6 more pages - Personal - Microsoft​ Edge 10_11_2023 21_42_32.png>)
+- First you have to sign up for Netlify (here I signed up using email).
+  [Sign Up]![Alt text](Assets/Documentation1.png)
 
-- Setelah anda berhasil masuk, langkah selanjutnya adalah menghubungkan Netlify dengan akun Github.
+- After you have successfully logged in, the next step is to connect Netlify with your Github account.
 
-- Pada tampilan bagian kiri terdapat beberapa menu, klik pada menu deploys, kemudian pada bagian Repository klik menu 'Manage Repository'.
-  [Deploy]![Alt text](<(413) How to Setup a Custom Domain in Netlify in 2023 - YouTube and 7 more pages - Personal - Microsoft​ Edge 10_11_2023 22_48_47.png>)
+- On the left side of the display there are several menus, click on the deploys menu, then in the Repository section click on the 'Manage Repository' menu.
+  [Deploy]![Alt text](Assets/Documentation%202.png)
 
-- Setelah itu, anda harus memilih pada pada bagian 'Deploy with Github' agar akun Github anda dapat tersambung dengan Netlify.
+- After that, you have to select the 'Deploy with Github' section so that your Github account can be connected to Netlify.
 
-- Kemudian pilih Repository pada akun Github yang akan anda hubungkan dengan Netlify.
-  [Memilih repository]![Alt text](<Untitled - Personal - Microsoft​ Edge 10_11_2023 22_21_38.png>)
+- Then select Repository on the Github account that you will connect to Netlify.
+  [Memilih repository]![Alt text](Assets/Documentation3.png)
 
-- Dan konfigurasikan Repository anda menuju Netlify.
-  [Konfigurasi Repository]![Alt text](<Untitled - Personal - Microsoft​ Edge 10_11_2023 22_20_16.png>)
+-And configure your Repository on Netlify.
+[Konfigurasi Repository]![Alt text](Assets/Documentation4.png)
 
-- Akun Github anda sudah terhubung dengan Netlify.
-  [Sudah terhubung]![Alt text](<(413) How to Setup a Custom Domain in Netlify in 2023 - YouTube and 7 more pages - Personal - Microsoft​ Edge 10_11_2023 22_48_47-1.png>).
+- Your Github account is already connected to Netlify.
+  [Sudah terhubung]![Alt text](Assets/Documentation5.png).
 
 ### 2. How to connect your custom domain and DNS
 
-- Pertama yang harus anda lakukan adalah klik pada menu 'Domain Management'.
-  [Pertama]![Alt text](<(413) How to Setup a Custom Domain in Netlify in 2023 - YouTube and 7 more pages - Personal - Microsoft​ Edge 10_11_2023 22_33_32.png>)
+- The first thing you have to do is click on the 'Domain Management' menu.
+  [Pertama]![Alt text](Assets/Documentation6.png)
 
-- Selanjutnya pilih pada bagian menu 'Add domain'.
-  [Kedua]![Alt text](<General _ Site configuration _ sensational-taffy-62a196 _ Netlify and 6 more pages - Personal - Microsoft​ Edge 10_11_2023 22_25_07.png>)
+- Next, select the 'Add domain' menu.
+  [Kedua]![Alt text](Assets/Documentation7.png)
 
-- Masukan nama domain yang sudah anda miliki.
-  [Ketiga]![Alt text](<General _ Site configuration _ sensational-taffy-62a196 _ Netlify and 6 more pages - Personal - Microsoft​ Edge 10_11_2023 22_25_15.png>)
+- Enter the domain name that you already own.
+  [Ketiga]![Alt text](Assets/Documentation8.png)
 
-- Klik pada bagian DNS.
-  [Keempat]![Alt text](<(413) How to Setup a Custom Domain in Netlify in 2023 - YouTube and 7 more pages - Personal - Microsoft​ Edge 10_11_2023 22_30_01.png>)
+- Click on the DNS section.
+  [Keempat]![Alt text](Assets/Documentation9.png)
 
-- Pergi menuju bagian Nameservers, kemudian klik Change dan masukkan Nameservers yang kamu dapatkan di awal.
-  [Kelima]![Alt text](<(413) How to Setup a Custom Domain in Netlify in 2023 - YouTube and 7 more pages - Personal - Microsoft​ Edge 10_11_2023 22_32_04.png>)
-  [Keenam]![Alt text](<(413) How to Setup a Custom Domain in Netlify in 2023 - YouTube and 7 more pages - Personal - Microsoft​ Edge 10_11_2023 22_32_17.png>)
-  [Ketujuh]![Alt text](<(413) How to Setup a Custom Domain in Netlify in 2023 - YouTube and 7 more pages - Personal - Microsoft​ Edge 10_11_2023 22_28_32.png>)
+- Go to the Nameservers section, then click Change and enter the Nameservers you got at the beginning.
+  [Kelima]![Alt text](Assets/Documentation10.png)
+  [Keenam]![Alt text](Assets/Documentation11.png)
+  [Ketujuh]![Alt text](Assets/Documentation12.png)
 
--Setelah semua langkah sudah dilakukan, kemudian lihat pada menu 'Domain management'. Pastikan Netlify DNS sudah tercentang.
-[Pengecekan]![Alt text](<(413) How to Setup a Custom Domain in Netlify in 2023 - YouTube and 7 more pages - Personal - Microsoft​ Edge 10_11_2023 22_33_32-1.png>)
+- After all the steps have been carried out, then look at the 'Domain management' menu. Make sure Netlify DNS is checked.
+  [Pengecekan]![Alt text](Assets/Documentation13.png)
